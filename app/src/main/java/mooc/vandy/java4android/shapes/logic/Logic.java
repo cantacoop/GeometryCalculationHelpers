@@ -1,5 +1,8 @@
 package mooc.vandy.java4android.shapes.logic;
 
+import android.text.TextUtils;
+import android.util.Log;
+
 import mooc.vandy.java4android.shapes.ui.OutputInterface;
 
 /**
@@ -228,8 +231,8 @@ public class Logic
      */
     public static double rightTrianglePerimeter(double base, double height) {
 
-        // formula c^2 = a^2 + b^2
-        return Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2));
+        // formula P = a + b + sqrt(a^2 + b^2)
+        return base + height + Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2));
     }
 
     /**
